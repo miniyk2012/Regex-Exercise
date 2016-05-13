@@ -1,0 +1,1073 @@
+
+<!-- saved from url=(0036)https://regex.netlify.com/exercises2 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="generator" content="Docutils 0.12: http://docutils.sourceforge.net/">
+<title>Part 2 Exercises</title>
+<style type="text/css">
+
+/*
+ * basic.css
+ * ~~~~~~~~~
+ *
+ * Sphinx stylesheet -- basic theme.
+ *
+ * :copyright: Copyright 2007-2010 by the Sphinx team, see AUTHORS.
+ * :license: BSD, see LICENSE for details.
+ *
+ */
+
+/* -- main layout ----------------------------------------------------------- */
+
+div.clearer {
+    clear: both;
+}
+
+/* -- relbar ---------------------------------------------------------------- */
+
+div.related {
+    width: 100%;
+    font-size: 90%;
+}
+
+div.related h3 {
+    display: none;
+}
+
+div.related ul {
+    margin: 0;
+    padding: 0 0 0 10px;
+    list-style: none;
+}
+
+div.related li {
+    display: inline;
+}
+
+div.related li.right {
+    float: right;
+    margin-right: 5px;
+}
+
+/* -- sidebar --------------------------------------------------------------- */
+
+div.sphinxsidebarwrapper {
+    padding: 10px 5px 0 10px;
+}
+
+div.sphinxsidebar {
+    float: left;
+    width: 230px;
+    margin-left: -100%;
+    font-size: 90%;
+}
+
+div.sphinxsidebar ul {
+    list-style: none;
+}
+
+div.sphinxsidebar ul ul,
+div.sphinxsidebar ul.want-points {
+    margin-left: 20px;
+    list-style: square;
+}
+
+div.sphinxsidebar ul ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div.sphinxsidebar form {
+    margin-top: 10px;
+}
+
+div.sphinxsidebar input {
+    border: 1px solid #98dbcc;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+img {
+    border: 0;
+}
+
+/* -- search page ----------------------------------------------------------- */
+
+ul.search {
+    margin: 10px 0 0 20px;
+    padding: 0;
+}
+
+ul.search li {
+    padding: 5px 0 5px 20px;
+    background-image: url(file.png);
+    background-repeat: no-repeat;
+    background-position: 0 7px;
+}
+
+ul.search li a {
+    font-weight: bold;
+}
+
+ul.search li div.context {
+    color: #888;
+    margin: 2px 0 0 30px;
+    text-align: left;
+}
+
+ul.keywordmatches li.goodmatch a {
+    font-weight: bold;
+}
+
+/* -- index page ------------------------------------------------------------ */
+
+table.contentstable {
+    width: 90%;
+}
+
+table.contentstable p.biglink {
+    line-height: 150%;
+}
+
+a.biglink {
+    font-size: 1.3em;
+}
+
+span.linkdescr {
+    font-style: italic;
+    padding-top: 5px;
+    font-size: 90%;
+}
+
+/* -- general index --------------------------------------------------------- */
+
+table.indextable {
+    width: 100%;
+}
+
+table.indextable td {
+    text-align: left;
+    vertical-align: top;
+}
+
+table.indextable dl, table.indextable dd {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+table.indextable tr.pcap {
+    height: 10px;
+}
+
+table.indextable tr.cap {
+    margin-top: 10px;
+    background-color: #f2f2f2;
+}
+
+img.toggler {
+    margin-right: 3px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+div.modindex-jumpbox {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 1em 0 1em 0;
+    padding: 0.4em;
+}
+
+div.genindex-jumpbox {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 1em 0 1em 0;
+    padding: 0.4em;
+}
+
+/* -- general body styles --------------------------------------------------- */
+
+a.headerlink {
+    visibility: hidden;
+}
+
+h1:hover > a.headerlink,
+h2:hover > a.headerlink,
+h3:hover > a.headerlink,
+h4:hover > a.headerlink,
+h5:hover > a.headerlink,
+h6:hover > a.headerlink,
+dt:hover > a.headerlink {
+    visibility: visible;
+}
+
+div.body p.caption {
+    text-align: inherit;
+}
+
+div.body td {
+    text-align: left;
+}
+
+.field-list ul {
+    padding-left: 1em;
+}
+
+.first {
+    margin-top: 0 !important;
+}
+
+p.rubric {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    clear: both;
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+/* -- sidebars -------------------------------------------------------------- */
+
+div.sidebar {
+    margin: 0 0 0.5em 1em;
+    border: 1px solid #ddb;
+    padding: 7px 7px 0 7px;
+    background-color: #ffe;
+    width: 40%;
+    float: right;
+}
+
+p.sidebar-title {
+    font-weight: bold;
+}
+
+/* -- topics ---------------------------------------------------------------- */
+
+div.topic {
+    border: 1px solid #ccc;
+    padding: 7px 7px 0 7px;
+    margin: 10px 0 10px 0;
+}
+
+p.topic-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* -- admonitions ----------------------------------------------------------- */
+
+div.admonition {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+
+div.admonition dt {
+    font-weight: bold;
+}
+
+div.admonition dl {
+    margin-bottom: 0;
+}
+
+p.admonition-title {
+    margin: 0px 10px 5px 0px;
+    font-weight: bold;
+}
+
+div.body p.centered {
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* -- tables ---------------------------------------------------------------- */
+
+table.docutils {
+    border: 0;
+    border-collapse: collapse;
+}
+
+table.docutils td, table.docutils th {
+    padding: 1px 8px 1px 5px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #aaa;
+}
+
+table.field-list td, table.field-list th {
+    border: 0 !important;
+}
+
+table.footnote td, table.footnote th {
+    border: 0 !important;
+}
+
+th {
+    text-align: left;
+    padding-right: 5px;
+}
+
+table.citation {
+    border-left: solid 1px gray;
+    margin-left: 1px;
+}
+
+table.citation td {
+    border-bottom: none;
+}
+
+/* -- other body styles ----------------------------------------------------- */
+
+ol.arabic {
+    list-style: decimal;
+}
+
+ol.loweralpha {
+    list-style: lower-alpha;
+}
+
+ol.upperalpha {
+    list-style: upper-alpha;
+}
+
+ol.lowerroman {
+    list-style: lower-roman;
+}
+
+ol.upperroman {
+    list-style: upper-roman;
+}
+
+dl {
+    margin-bottom: 15px;
+}
+
+dd p {
+    margin-top: 0px;
+}
+
+dd ul, dd table {
+    margin-bottom: 10px;
+}
+
+dd {
+    margin-top: 3px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+dt:target, .highlighted {
+    background-color: #fbe54e;
+}
+
+dl.glossary dt {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.field-list ul {
+    margin: 0;
+    padding-left: 1em;
+}
+
+.field-list p {
+    margin: 0;
+}
+
+.refcount {
+    color: #060;
+}
+
+.optional {
+    font-size: 1.3em;
+}
+
+.versionmodified {
+    font-style: italic;
+}
+
+.system-message {
+    background-color: #fda;
+    padding: 5px;
+    border: 3px solid red;
+}
+
+.footnote:target  {
+    background-color: #ffa
+}
+
+.line-block {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.line-block .line-block {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1.5em;
+}
+
+.guilabel, .menuselection {
+    font-family: sans-serif;
+}
+
+.accelerator {
+    text-decoration: underline;
+}
+
+.classifier {
+    font-style: oblique;
+}
+
+/* -- code displays --------------------------------------------------------- */
+
+pre {
+    overflow: auto;
+}
+
+td.linenos pre {
+    padding: 5px 0px;
+    border: 0;
+    background-color: transparent;
+    color: #aaa;
+}
+
+table.highlighttable {
+    margin-left: 0.5em;
+}
+
+table.highlighttable td {
+    padding: 0 0.5em 0 0.5em;
+}
+
+tt.descname {
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+tt.descclassname {
+    background-color: transparent;
+}
+
+tt.xref, a tt {
+    background-color: transparent;
+    font-weight: bold;
+}
+
+h1 tt, h2 tt, h3 tt, h4 tt, h5 tt, h6 tt {
+    background-color: transparent;
+}
+
+.viewcode-link {
+    float: right;
+}
+
+.viewcode-back {
+    float: right;
+    font-family: sans-serif;
+}
+
+div.viewcode-block:target {
+    margin: -1px -10px;
+    padding: 0 10px;
+}
+
+/* -- math display ---------------------------------------------------------- */
+
+img.math {
+    vertical-align: middle;
+}
+
+div.body div.math p {
+    text-align: center;
+}
+
+span.eqno {
+    float: right;
+}
+
+/* -- printout stylesheet --------------------------------------------------- */
+
+@media print {
+    div.document,
+    div.documentwrapper,
+    div.bodywrapper {
+        margin: 0 !important;
+        width: 100%;
+    }
+
+    div.sphinxsidebar,
+    div.related,
+    div.footer,
+    #top-link {
+        display: none;
+    }
+}
+
+</style>
+<style type="text/css">
+
+/*
+ * nature.css_t
+ * ~~~~~~~~~~~~
+ *
+ * Sphinx stylesheet -- nature theme.
+ *
+ * :copyright: Copyright 2007-2010 by the Sphinx team, see AUTHORS.
+ * :license: BSD, see LICENSE for details.
+ *
+ */
+ 
+/* -- page layout ----------------------------------------------------------- */
+ 
+body {
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+    /*background-color: #111;*/
+    color: #555;
+    margin: 0;
+    padding: 0;
+}
+
+div.documentwrapper {
+    float: left;
+    width: 100%;
+}
+
+div.bodywrapper {
+    margin: 0 0 0 230px;
+}
+
+hr {
+    border: 1px solid #B1B4B6;
+}
+ 
+div.document {
+    background-color: #eee;
+}
+ 
+div.body {
+    background-color: #ffffff;
+    color: #3E4349;
+    padding: 0 30px 30px 30px;
+    font-size: 0.9em;
+}
+ 
+div.footer {
+    color: #555;
+    width: 100%;
+    padding: 13px 0;
+    text-align: center;
+    font-size: 75%;
+}
+ 
+div.footer a {
+    color: #444;
+    text-decoration: underline;
+}
+ 
+div.related {
+    background-color: #6BA81E;
+    line-height: 32px;
+    color: #fff;
+    text-shadow: 0px 1px 0 #444;
+    font-size: 0.9em;
+}
+ 
+div.related a {
+    color: #E2F3CC;
+}
+ 
+div.sphinxsidebar {
+    font-size: 0.75em;
+    line-height: 1.5em;
+}
+
+div.sphinxsidebarwrapper{
+    padding: 20px 0;
+}
+ 
+div.sphinxsidebar h3,
+div.sphinxsidebar h4 {
+    font-family: Arial, sans-serif;
+    color: #222;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: 0;
+    padding: 5px 10px;
+    background-color: #ddd;
+    text-shadow: 1px 1px 0 white
+}
+
+div.sphinxsidebar h4{
+    font-size: 1.1em;
+}
+ 
+div.sphinxsidebar h3 a {
+    color: #444;
+}
+ 
+ 
+div.sphinxsidebar p {
+    color: #888;
+    padding: 5px 20px;
+}
+ 
+div.sphinxsidebar p.topless {
+}
+ 
+div.sphinxsidebar ul {
+    margin: 10px 20px;
+    padding: 0;
+    color: #000;
+}
+ 
+div.sphinxsidebar a {
+    color: #444;
+}
+ 
+div.sphinxsidebar input {
+    border: 1px solid #ccc;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+div.sphinxsidebar input[type=text]{
+    margin-left: 20px;
+}
+ 
+/* -- body styles ----------------------------------------------------------- */
+ 
+a {
+    color: #005B81;
+    text-decoration: none;
+}
+ 
+a:hover {
+    color: #E32E00;
+    text-decoration: underline;
+}
+ 
+div.body h1,
+div.body h2,
+div.body h3,
+div.body h4,
+div.body h5,
+div.body h6 {
+    font-family: Arial, sans-serif;
+    background-color: #BED4EB;
+    font-weight: normal;
+    color: #212224;
+    margin: 30px 0px 10px 0px;
+    padding: 5px 0 5px 10px;
+    text-shadow: 0px 1px 0 white
+}
+ 
+div.body h1 { border-top: 20px solid white; margin-top: 0; font-size: 200%; }
+div.body h2 { font-size: 150%; background-color: #C8D5E3; }
+div.body h3 { font-size: 120%; background-color: #D8DEE3; }
+div.body h4 { font-size: 110%; background-color: #D8DEE3; }
+div.body h5 { font-size: 100%; background-color: #D8DEE3; }
+div.body h6 { font-size: 100%; background-color: #D8DEE3; }
+ 
+a.headerlink {
+    color: #c60f0f;
+    font-size: 0.8em;
+    padding: 0 4px 0 4px;
+    text-decoration: none;
+}
+ 
+a.headerlink:hover {
+    background-color: #c60f0f;
+    color: white;
+}
+ 
+div.body p, div.body dd, div.body li {
+    line-height: 1.5em;
+}
+ 
+div.admonition p.admonition-title + p {
+    display: inline;
+}
+
+div.highlight{
+    background-color: white;
+}
+
+div.note {
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+ 
+div.seealso {
+    background-color: #ffc;
+    border: 1px solid #ff6;
+}
+ 
+div.topic {
+    background-color: #eee;
+}
+ 
+div.warning {
+    background-color: #ffe4e4;
+    border: 1px solid #f66;
+}
+ 
+p.admonition-title {
+    display: inline;
+}
+ 
+p.admonition-title:after {
+    content: ":";
+}
+ 
+pre {
+    padding: 10px;
+    background-color: White;
+    color: #222;
+    line-height: 1.2em;
+    border: 1px solid #C6C9CB;
+    font-size: 1.1em;
+    margin: 1.5em 0 1.5em 0;
+    -webkit-box-shadow: 1px 1px 1px #d8d8d8;
+    -moz-box-shadow: 1px 1px 1px #d8d8d8;
+}
+ 
+tt {
+    background-color: #ecf0f3;
+    color: #222;
+    /* padding: 1px 2px; */
+    font-size: 1.1em;
+    font-family: monospace;
+}
+
+.viewcode-back {
+    font-family: Arial, sans-serif;
+}
+
+div.viewcode-block:target {
+    background-color: #f4debf;
+    border-top: 1px solid #ac9;
+    border-bottom: 1px solid #ac9;
+}
+
+p {
+	margin: 0;
+}
+
+ul li dd {
+	margin-top: 0;
+}
+
+ul li dl {
+	margin-bottom: 0;
+}
+
+li dl dd {
+	margin-bottom: 0;
+}
+
+dd ul {
+	padding-left: 0;
+}
+
+li dd ul {
+	margin-bottom: 0;
+}
+
+</style>
+<style type="text/css"></style></head>
+<body>
+<div class="document" id="exercises">
+ <div class="body">
+<h1 class="title">Part 2 Exercises</h1>
+
+
+<div class="section" id="more-regular-expression-exercises">
+<h1>More Regular Expression Exercises</h1>
+<!-- Estimated Time: 5 minutes -->
+<div class="section" id="decimal-numbers">
+<h2>Decimal Numbers</h2>
+<!-- Estimated Time: 3 minutes -->
+<p>Write a function to match decimal numbers.</p>
+<p>We want to allow an optional <tt class="docutils literal">-</tt> and we want to match numbers with or without one decimal point:</p>
+<pre class="code pycon literal-block"><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">is_number</span><span class="punctuation">(</span><span class="literal string">"5"</span><span class="punctuation">)</span>
+<span class="generic output">True
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">is_number</span><span class="punctuation">(</span><span class="literal string">"5."</span><span class="punctuation">)</span>
+<span class="generic output">True
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">is_number</span><span class="punctuation">(</span><span class="literal string">".5."</span><span class="punctuation">)</span>
+<span class="generic output">False
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">is_number</span><span class="punctuation">(</span><span class="literal string">".5"</span><span class="punctuation">)</span>
+<span class="generic output">True
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">is_number</span><span class="punctuation">(</span><span class="literal string">"01.5"</span><span class="punctuation">)</span>
+<span class="generic output">True
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">is_number</span><span class="punctuation">(</span><span class="literal string">"-123.859"</span><span class="punctuation">)</span>
+<span class="generic output">True
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">is_number</span><span class="punctuation">(</span><span class="literal string">"-123.859."</span><span class="punctuation">)</span>
+<span class="generic output">False
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">is_number</span><span class="punctuation">(</span><span class="literal string">"."</span><span class="punctuation">)</span>
+<span class="generic output">False</span>
+</pre>
+<!-- answers:
+
+.. code-block:: python
+
+    def is_number(num_string):
+        return bool(re.search(r'^[-+]?(\*\.?\d+|\d+\.)$', num_string)) -->
+</div>
+<div class="section" id="hex-colors">
+<h2>Hex Colors</h2>
+<!-- Estimated Time: 2 minutes -->
+<p>Write a function to match hexadecimal color codes.  Hex color codes consist of an octothorpe symbol followed by either 3 or 6 hexadecimal digits (that's <tt class="docutils literal">0</tt> to <tt class="docutils literal">9</tt> or <tt class="docutils literal">a</tt> to <tt class="docutils literal">f</tt>).</p>
+<pre class="code pycon literal-block"><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">is_hex_color</span><span class="punctuation">(</span><span class="literal string">"#639"</span><span class="punctuation">)</span>
+<span class="generic output">True
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">is_hex_color</span><span class="punctuation">(</span><span class="literal string">"#6349"</span><span class="punctuation">)</span>
+<span class="generic output">False
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">is_hex_color</span><span class="punctuation">(</span><span class="literal string">"#63459"</span><span class="punctuation">)</span>
+<span class="generic output">False
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">is_hex_color</span><span class="punctuation">(</span><span class="literal string">"#634569"</span><span class="punctuation">)</span>
+<span class="generic output">True
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">is_hex_color</span><span class="punctuation">(</span><span class="literal string">"#663399"</span><span class="punctuation">)</span>
+<span class="generic output">True
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">is_hex_color</span><span class="punctuation">(</span><span class="literal string">"#000000"</span><span class="punctuation">)</span>
+<span class="generic output">True
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">is_hex_color</span><span class="punctuation">(</span><span class="literal string">"#00"</span><span class="punctuation">)</span>
+<span class="generic output">False
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">is_hex_color</span><span class="punctuation">(</span><span class="literal string">"#FFffFF"</span><span class="punctuation">)</span>
+<span class="generic output">True
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">is_hex_color</span><span class="punctuation">(</span><span class="literal string">"#decaff"</span><span class="punctuation">)</span>
+<span class="generic output">True
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">is_hex_color</span><span class="punctuation">(</span><span class="literal string">"#decafz"</span><span class="punctuation">)</span>
+<span class="generic output">False</span>
+</pre>
+</div>
+<div class="section" id="palindromes">
+<h2>Palindromes</h2>
+<!-- Estimated Time: 1 minutes -->
+<p>Using the dictionary file, find all five letter palindromes.</p>
+</div>
+<div class="section" id="double-double">
+<h2>Double Double</h2>
+<!-- Estimated Time: 2 minutes -->
+<p>Find all words that have a consecutive repeated letter two times with only one other letter between them.</p>
+<p>For example, these words should be matched:</p>
+<ul class="simple">
+<li>freebee</li>
+<li>assessed</li>
+<li>voodoo</li>
+</ul>
+<!-- answers:
+
+.. code-block:: pycon
+
+    >>> re.findall(r'(.*(\w)\2.\2\2.*)', dictionary) -->
+</div>
+<div class="section" id="repetitive-words">
+<h2>Repetitive Words</h2>
+<!-- Estimated Time: 2 minutes -->
+<p>Find all words that consist of the same letters repeated two times.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li>tutu</li>
+<li>cancan</li>
+<li>murmur</li>
+</ul>
+</div>
+</div>
+<div class="section" id="substitution-exercises">
+<h1>Substitution Exercises</h1>
+<!-- Estimated Time: 10 minutes -->
+<div class="section" id="get-file-extension">
+<h2>Get File Extension</h2>
+<!-- Estimated Time: 1 minute -->
+<p>Make a function that accepts a full file path and returns the file extension.</p>
+<p>Example usage:</p>
+<pre class="code pycon literal-block"><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">get_extension</span><span class="punctuation">(</span><span class="literal string">'archive.zip'</span><span class="punctuation">)</span>
+<span class="generic output">'zip'
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">get_extension</span><span class="punctuation">(</span><span class="literal string">'image.jpeg'</span><span class="punctuation">)</span>
+<span class="generic output">'jpeg'
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">get_extension</span><span class="punctuation">(</span><span class="literal string">'index.xhtml'</span><span class="punctuation">)</span>
+<span class="generic output">'xhtml'
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">get_extension</span><span class="punctuation">(</span><span class="literal string">'archive.tar.gz'</span><span class="punctuation">)</span>
+<span class="generic output">'gz'</span>
+</pre>
+</div>
+<div class="section" id="normalize-jpeg-extension">
+<h2>Normalize JPEG Extension</h2>
+<!-- Estimated Time: 2 minutes -->
+<p>Make a function that accepts a JPEG filename and returns a new filename with jpg lowercased without an <tt class="docutils literal">e</tt>.</p>
+<p>Example usage:</p>
+<pre class="code pycon literal-block"><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">normalize_jpeg</span><span class="punctuation">(</span><span class="literal string">'avatar.jpeg'</span><span class="punctuation">)</span>
+<span class="generic output">'avatar.jpg'
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">normalize_jpeg</span><span class="punctuation">(</span><span class="literal string">'Avatar.JPEG'</span><span class="punctuation">)</span>
+<span class="generic output">'Avatar.jpg'
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">normalize_jpeg</span><span class="punctuation">(</span><span class="literal string">'AVATAR.Jpg'</span><span class="punctuation">)</span>
+<span class="generic output">'AVATAR.jpg'</span>
+</pre>
+</div>
+<div class="section" id="normalize-whitespace">
+<h2>Normalize Whitespace</h2>
+<!-- Estimated Time: 2 minutes -->
+<p>Make a function that replaces all instances of one or more whitespace characters with a single space:</p>
+<pre class="code pycon literal-block"><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">normalize_whitespace</span><span class="punctuation">(</span><span class="literal string">"hello  there"</span><span class="punctuation">)</span>
+<span class="generic output">"hello there"
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">normalize_whitespace</span><span class="punctuation">(</span><span class="literal string">"""Hold fast to dreams
+</span><span class="generic prompt">... </span><span class="literal string">For if dreams die
+</span><span class="generic prompt">... </span><span class="literal string">Life is a broken-winged bird
+</span><span class="generic prompt">... </span><span class="literal string">That cannot fly.
+</span><span class="generic prompt">...</span><span class="literal string">
+</span><span class="generic prompt">... </span><span class="literal string">Hold fast to dreams
+</span><span class="generic prompt">... </span><span class="literal string">For when dreams go
+</span><span class="generic prompt">... </span><span class="literal string">Life is a barren field
+</span><span class="generic prompt">... </span><span class="literal string">Frozen with snow."""</span><span class="punctuation">)</span>
+<span class="generic output">'Hold fast to dreams For if dreams die Life is a broken-winged bird That cannot fly. Hold fast to dreams For when dreams go Life is a barren field Frozen with snow.'</span>
+</pre>
+</div>
+<div class="section" id="compress-blank-links">
+<h2>Compress blank links</h2>
+<!-- Estimated Time: 3 minutes -->
+<p>Write a function that accepts a string and an integer <tt class="docutils literal">N</tt> and compresses runs of <tt class="docutils literal">N</tt> or more consecutive empty lines into just <tt class="docutils literal">N</tt> empty lines.</p>
+<p>Example usage:</p>
+<pre class="code pycon literal-block"><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">compress_blank_lines</span><span class="punctuation">(</span><span class="literal string">"a</span><span class="literal string escape">\n\n</span><span class="literal string">b"</span><span class="punctuation">,</span> <span class="name">max_blanks</span><span class="operator">=</span><span class="literal number integer">1</span><span class="punctuation">)</span>
+<span class="generic output">'a\n\nb'
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">compress_blank_lines</span><span class="punctuation">(</span><span class="literal string">"a</span><span class="literal string escape">\n\n</span><span class="literal string">b"</span><span class="punctuation">,</span> <span class="name">max_blanks</span><span class="operator">=</span><span class="literal number integer">0</span><span class="punctuation">)</span>
+<span class="generic output">'a\nb'
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">compress_blank_lines</span><span class="punctuation">(</span><span class="literal string">"a</span><span class="literal string escape">\n\n</span><span class="literal string">b"</span><span class="punctuation">,</span> <span class="name">max_blanks</span><span class="operator">=</span><span class="literal number integer">2</span><span class="punctuation">)</span>
+<span class="generic output">'a\n\nb'
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">compress_blank_lines</span><span class="punctuation">(</span><span class="literal string">"a</span><span class="literal string escape">\n\n\n\n</span><span class="literal string">b</span><span class="literal string escape">\n\n\n</span><span class="literal string">c"</span><span class="punctuation">,</span> <span class="name">max_blanks</span><span class="operator">=</span><span class="literal number integer">2</span><span class="punctuation">)</span>
+<span class="generic output">'a\n\n\nb\n\n\nc'</span>
+</pre>
+</div>
+<div class="section" id="normalize-url">
+<h2>Normalize URL</h2>
+<!-- Estimated Time: 2 minutes -->
+<p>I own the domain treyhunner.com.  I prefer to link to my website as <tt class="docutils literal"><span class="pre">https://treyhunner.com</span></tt>, but I have some links that use <tt class="docutils literal">http</tt> or use a <tt class="docutils literal">www</tt> subdomain.</p>
+<p>Write a function that normalizes all <tt class="docutils literal">www.treyhunner.com</tt> and <tt class="docutils literal">treyhunner.com</tt> links to use HTTPS and remove the <tt class="docutils literal">www</tt> subdomain.</p>
+<p>Example usage:</p>
+<pre class="code pycon literal-block"><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">normalize_domain</span><span class="punctuation">(</span><span class="literal string">"http://treyhunner.com/2015/12/python-list-comprehensions-now-in-color/"</span><span class="punctuation">)</span>
+<span class="generic output">'https://treyhunner.com/2015/12/python-list-comprehensions-now-in-color/'
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">normalize_domain</span><span class="punctuation">(</span><span class="literal string">"https://treyhunner.com/2016/02/how-to-merge-dictionaries-in-python/"</span><span class="punctuation">)</span>
+<span class="generic output">'https://treyhunner.com/2016/02/how-to-merge-dictionaries-in-python/'
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">normalize_domain</span><span class="punctuation">(</span><span class="literal string">"http://www.treyhunner.com/2015/11/counting-things-in-python/"</span><span class="punctuation">)</span>
+<span class="generic output">'https://treyhunner.com/2015/11/counting-things-in-python/'
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">normalize_domain</span><span class="punctuation">(</span><span class="literal string">"http://www.treyhunner.com"</span><span class="punctuation">)</span>
+<span class="generic output">'https://treyhunner.com'
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">normalize_domain</span><span class="punctuation">(</span><span class="literal string">"http://trey.in/give-a-talk"</span><span class="punctuation">)</span>
+<span class="generic output">'http://trey.in/give-a-talk'</span>
+</pre>
+</div>
+<div class="section" id="linebreaks">
+<h2>Linebreaks</h2>
+<!-- Estimated Time: 3 minutes -->
+<p>Write a function that accepts a string and converts linebreaks to HTML in the following way:</p>
+<ul class="simple">
+<li>text is surrounded by paragraphs</li>
+<li>text with two line breaks between is considered two separate paragraphs</li>
+<li>text with a single line break between is separated by a <tt class="docutils literal">&lt;br&gt;</tt></li>
+</ul>
+<p>Example usage:</p>
+<pre class="code pycon literal-block"><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">convert_linebreaks</span><span class="punctuation">(</span><span class="literal string">"hello"</span><span class="punctuation">)</span>
+<span class="generic output">'&lt;p&gt;hello&lt;/p&gt;'
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">convert_linebreaks</span><span class="punctuation">(</span><span class="literal string">"hello</span><span class="literal string escape">\n</span><span class="literal string">there"</span><span class="punctuation">)</span>
+<span class="generic output">'&lt;p&gt;hello&lt;br&gt;there&lt;/p&gt;'
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">convert_linebreaks</span><span class="punctuation">(</span><span class="literal string">"hello</span><span class="literal string escape">\n\n</span><span class="literal string">there"</span><span class="punctuation">)</span>
+<span class="generic output">'&lt;p&gt;hello&lt;/p&gt;&lt;p&gt;there&lt;/p&gt;'
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">convert_linebreaks</span><span class="punctuation">(</span><span class="literal string">"hello</span><span class="literal string escape">\n</span><span class="literal string">there</span><span class="literal string escape">\n\n</span><span class="literal string">world"</span><span class="punctuation">)</span>
+<span class="generic output">'&lt;p&gt;hello&lt;br&gt;there&lt;/p&gt;&lt;p&gt;world&lt;/p&gt;'</span>
+</pre>
+</div>
+</div>
+<div class="section" id="lookahead-exercises">
+<h1>Lookahead Exercises</h1>
+<!-- Estimated Time: 15 minutes -->
+<div class="section" id="all-vowels">
+<h2>All Vowels</h2>
+<!-- Estimated Time: 2 minutes -->
+<p>Find all words that are at most 9 letters long and contain every vowel (<tt class="docutils literal">a</tt>, <tt class="docutils literal">e</tt>, <tt class="docutils literal">i</tt>, <tt class="docutils literal">o</tt>, <tt class="docutils literal">u</tt>) in any order.</p>
+</div>
+<div class="section" id="unique-letters">
+<h2>Unique Letters</h2>
+<!-- Estimated Time: 2 minutes -->
+<p>Find all words that are 10 letters long and do not have any repeating letters.</p>
+</div>
+<div class="section" id="html-encode-ampersands">
+<h2>HTML Encode Ampersands</h2>
+<!-- Estimated Time: 2 minutes -->
+<p>Replace all <tt class="docutils literal">&amp;</tt> characters which are not part of HTML escape sequences by an HTML-encoded ampersand (<tt class="docutils literal">&amp;amp;</tt>).</p>
+<p>Example:</p>
+<pre class="code pycon literal-block"><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">encode_ampersands</span><span class="punctuation">(</span><span class="literal string">"This &amp;amp; that &amp; that &amp;#38; this."</span><span class="punctuation">)</span>
+<span class="generic output">'This &amp;amp; that &amp;amp; that &amp;#38; this.'
+</span><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">encode_ampersands</span><span class="punctuation">(</span><span class="literal string">"A&amp;W"</span><span class="punctuation">)</span>
+<span class="generic output">'A&amp;amp;W'</span>
+</pre>
+</div>
+<div class="section" id="broken-markdown-links">
+<h2>Broken Markdown Links</h2>
+<!-- Estimated Time: 2 minutes -->
+<p>Make a function that accepts a string and returns a list of all reference-style markdown links that do not have a corresponding link definition.</p>
+<p>Example:</p>
+<pre class="code pycon literal-block"><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">find_broken_links</span><span class="punctuation">(</span><span class="literal string">"""
+</span><span class="generic prompt">... </span><span class="literal string">[working link][Python]
+</span><span class="generic prompt">... </span><span class="literal string">[broken link][Google]
+</span><span class="generic prompt">... </span><span class="literal string">[python]: https://www.python.org/"""</span><span class="punctuation">)</span>
+<span class="generic output">[('broken link', 'Google')]</span>
+</pre>
+<p>As a <strong>bonus</strong>, make your function also work with implicit link names.  For example:</p>
+<pre class="code pycon literal-block"><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">find_broken_links</span><span class="punctuation">(</span><span class="literal string">"""
+</span><span class="generic prompt">... </span><span class="literal string">[Python][]
+</span><span class="generic prompt">... </span><span class="literal string">[Google][]
+</span><span class="generic prompt">... </span><span class="literal string">[python]: https://www.python.org/"""</span><span class="punctuation">)</span>
+<span class="generic output">[('broken link', 'Google')]</span>
+</pre>
+</div>
+<div class="section" id="camel-case-to-underscore">
+<h2>Camel Case to Underscore</h2>
+<!-- Estimated Time: 3 minutes -->
+<p>Make a function that converts camelCase strings to under_score strings.</p>
+</div>
+<div class="section" id="get-inline-markdown-links">
+<h2>Get Inline Markdown Links</h2>
+<!-- Estimated Time: 2 minutes -->
+<p>Make a function that accepts a string and returns a list of all inline markdown links in the given string.</p>
+<p>Inline markdown links look like this:</p>
+<pre class="literal-block">[text here](http://example.com)
+</pre>
+<p>Example:</p>
+<pre class="code pycon literal-block"><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">get_inline_links</span><span class="punctuation">(</span><span class="literal string">"""
+</span><span class="generic prompt">... </span><span class="literal string">[Python](https://www.python.org)
+</span><span class="generic prompt">... </span><span class="literal string">[Google](https://www.google.com)"""</span><span class="punctuation">)</span>
+<span class="generic output">[('Python', 'https://www.python.org'), ('Google', 'https://www.google.com')]</span>
+</pre>
+</div>
+<div class="section" id="get-all-markdown-links">
+<h2>Get All Markdown Links</h2>
+<!-- Estimated Time: 2 minutes -->
+<p>Modify your <tt class="docutils literal">get_inline_links</tt> function from the previous exercise to make a <tt class="docutils literal">get_markdown_links</tt> function which finds all markdown links.</p>
+<p>This function should work for inline links as well as reference links (including reference links with implicit link names).</p>
+<p>Example:</p>
+<pre class="code pycon literal-block"><span class="name"></span><span class="generic prompt">&gt;&gt;&gt; </span><span class="name">get_inline_links</span><span class="punctuation">(</span><span class="literal string">"""
+</span><span class="generic prompt">... </span><span class="literal string">[Python](https://www.python.org)
+</span><span class="generic prompt">... </span><span class="literal string">[Google][]
+</span><span class="generic prompt">... </span><span class="literal string">[Another link][example]
+</span><span class="generic prompt">... </span><span class="literal string">[google]: https://www.google.com
+</span><span class="generic prompt">... </span><span class="literal string">[example]: http://example.com"""</span><span class="punctuation">)</span>
+<span class="generic output">[('Python', 'https://www.python.org'), ('Google', 'https://www.google.com'), ('Another link', 'http://example.com')]</span>
+</pre>
+</div>
+</div>
+ </div>
+
+</div>
+</body></html>
